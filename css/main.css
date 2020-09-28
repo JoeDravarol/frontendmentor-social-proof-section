@@ -17,7 +17,6 @@ body {
 
 .wrapper {
   width: 90%;
-  min-height: 100%;
   margin: 0 auto;
 }
 
@@ -115,9 +114,56 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 5em;
 }
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media (min-width: 1440px) {
+  body {
+    text-align: left;
+  }
+  .wrapper {
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 5em;
+  }
+  .company-blurb {
+    display: inline-block;
+    width: 49.5%;
+  }
+  .company-blurb__heading {
+    font-size: 3.75em;
+  }
+  .company-blurb__content {
+    font-size: 1.1em;
+  }
+  .reviews {
+    display: inline-block;
+    width: 49.5%;
+    padding-left: 2em;
+  }
+  .review {
+    width: 100%;
+    max-width: 500px;
+    padding: 1em 2.25em;
+    text-align: left;
+    position: relative;
+  }
+  .review:nth-child(3n + 1) {
+    left: 0;
+  }
+  .review:nth-child(3n + 2) {
+    left: 5%;
+  }
+  .review:nth-child(3n + 0) {
+    left: 10%;
+  }
+  .review__heading {
+    display: inline-block;
+    margin-left: 1.25em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
