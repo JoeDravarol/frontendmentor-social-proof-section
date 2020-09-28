@@ -196,4 +196,26 @@ body {
       margin-left: 1.25em;
     }
   }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-column-gap: 2em;
+    margin-top: 2em;
+    height: 280px; // Here to change negative margin effect
+  }
+
+  .testimonial {
+    &:nth-child(3n + 1) {
+      align-self: start;
+    }
+ 
+    &:nth-child(3n + 2) {
+      align-self: center;
+    }
+ 
+    &:nth-child(3n + 0) {
+      align-self: end;
+    }
+  }
 }
