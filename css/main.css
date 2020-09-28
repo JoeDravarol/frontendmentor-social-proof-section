@@ -130,6 +130,20 @@ body {
     max-width: 1200px;
     padding-top: 5em;
   }
+  .wrapper::before {
+    width: 584px;
+    height: 362px;
+    background: url(/images/bg-pattern-top-desktop.svg);
+    z-index: -10;
+  }
+  .wrapper::after {
+    width: 1085px;
+    height: 673px;
+    background: url(/images/bg-pattern-bottom-desktop.svg);
+    top: initial;
+    bottom: 0;
+    z-index: -10;
+  }
   .company-blurb {
     display: inline-block;
     width: 49.5%;

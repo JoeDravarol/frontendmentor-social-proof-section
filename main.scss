@@ -151,6 +151,22 @@ body {
     width: 100%;
     max-width: 1200px;
     padding-top: 5em;
+
+    &::before {
+      width: map-get($desktop-bg-top-size, "width");
+      height: map-get($desktop-bg-top-size, "height");
+      background: url(/images/bg-pattern-top-desktop.svg);
+      z-index: -10;
+    }
+
+    &::after {
+      width: map-get($desktop-bg-bottom-size, "width");
+      height: map-get($desktop-bg-bottom-size, "height");
+      background: url(/images/bg-pattern-bottom-desktop.svg);
+      top: initial;
+      bottom: 0;
+      z-index: -10;
+    }
   }
 
   .company-blurb {
