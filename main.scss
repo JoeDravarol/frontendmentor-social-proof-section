@@ -50,7 +50,7 @@ body {
     left: 0;
     width: map-get($mobile-bg-top-size, "width");
     height: map-get($mobile-bg-top-size, "height");
-    background: url(/images/bg-pattern-top-mobile.svg);
+    background: url(../images/bg-pattern-top-mobile.svg);
   }
 
   &::after {
@@ -60,7 +60,7 @@ body {
     right: 0;
     width: map-get($mobile-bg-bottom-size, "width");
     height: map-get($mobile-bg-bottom-size, "height");
-    background: url(/images/bg-pattern-bottom-mobile.svg);
+    background: url(../images/bg-pattern-bottom-mobile.svg);
   }
 }
 
@@ -155,14 +155,14 @@ body {
     &::before {
       width: map-get($desktop-bg-top-size, "width");
       height: map-get($desktop-bg-top-size, "height");
-      background: url(/images/bg-pattern-top-desktop.svg);
+      background: url(../images/bg-pattern-top-desktop.svg);
       z-index: -10;
     }
 
     &::after {
       width: map-get($desktop-bg-bottom-size, "width");
       height: map-get($desktop-bg-bottom-size, "height");
-      background: url(/images/bg-pattern-bottom-desktop.svg);
+      background: url(../images/bg-pattern-bottom-desktop.svg);
       top: initial;
       bottom: 0;
       z-index: -10;

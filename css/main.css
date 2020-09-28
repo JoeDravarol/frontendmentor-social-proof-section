@@ -27,7 +27,7 @@ body {
   left: 0;
   width: 374px;
   height: 232px;
-  background: url(/images/bg-pattern-top-mobile.svg);
+  background: url(../images/bg-pattern-top-mobile.svg);
 }
 
 .wrapper::after {
@@ -37,7 +37,7 @@ body {
   right: 0;
   width: 375px;
   height: 503px;
-  background: url(/images/bg-pattern-bottom-mobile.svg);
+  background: url(../images/bg-pattern-bottom-mobile.svg);
 }
 
 .company-blurb {
@@ -133,13 +133,13 @@ body {
   .wrapper::before {
     width: 584px;
     height: 362px;
-    background: url(/images/bg-pattern-top-desktop.svg);
+    background: url(../images/bg-pattern-top-desktop.svg);
     z-index: -10;
   }
   .wrapper::after {
     width: 1085px;
     height: 673px;
-    background: url(/images/bg-pattern-bottom-desktop.svg);
+    background: url(../images/bg-pattern-bottom-desktop.svg);
     top: initial;
     bottom: 0;
     z-index: -10;
