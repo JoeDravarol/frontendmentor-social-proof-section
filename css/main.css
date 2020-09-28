@@ -75,6 +75,43 @@ body {
   margin-top: .5em;
 }
 
+.testimonial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75px 1fr;
+      grid-template-columns: 75px 1fr;
+  grid-row-gap: 1.75em;
+  background: #502050;
+  color: white;
+  text-align: left;
+  padding: 2.25em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+
+.testimonial__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f7f2f7;
+}
+
+.testimonial__info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.testimonial__verified {
+  font-size: 0.95em;
+  color: #ee68a4;
+  font-weight: 400;
+}
+
+.testimonial__content {
+  grid-column: span 2;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
