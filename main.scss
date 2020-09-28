@@ -6,6 +6,24 @@ $dark-grayish-magenta: hsl(303, 10%, 53%);
 $light-grayish-magenta: hsl(300, 24%, 96%);
 $white: hsl(0, 0%, 100%);
 
+// Svg size
+$mobile-bg-top-size: (
+  "width": 374px,
+  "height": 232px
+);
+$mobile-bg-bottom-size: (
+  "width": 375px,
+  "height": 503px
+);
+$desktop-bg-top-size: (
+  "width": 584px,
+  "height": 362px
+);
+$desktop-bg-bottom-size: (
+  "width": 1085px,
+  "height": 673px
+);
+
 *,
 *::before,
 *::after {
@@ -17,6 +35,68 @@ $white: hsl(0, 0%, 100%);
 body {
   font-size: 15px;
   font-family: "Spartan", Arial, Helvetica, sans-serif;
+  color: $dark-magenta;
+  text-align: center;
+}
+
+.wrapper {
+  width: 90%;
+  min-height: 100%;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: map-get($mobile-bg-top-size, "width");
+    height: map-get($mobile-bg-top-size, "height");
+    background: url(/images/bg-pattern-top-mobile.svg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: map-get($mobile-bg-bottom-size, "width");
+    height: map-get($mobile-bg-bottom-size, "height");
+    background: url(/images/bg-pattern-bottom-mobile.svg);
+  }
+}
+
+.company-blurb {
+  margin-top: 3em;
+
+  &__heading {
+    font-size: 2em;
+  }
+
+  &__content {
+    color: $dark-grayish-magenta;
+    margin: 1.5em 0;
+  }
+}
+
+.reviews {
+  margin: 2.5em 0;
+}
+
+.review {
+  background: $light-grayish-magenta;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+ 
+  &__star {
+    margin-right: .5em;
+  }
+
+  &__heading {
+    color: $dark-magenta;
+    font-size: 1.1em;
+    margin-top: .5em;
+  }
 }
 
 .attribution {

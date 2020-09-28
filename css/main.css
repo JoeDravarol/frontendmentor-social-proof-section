@@ -11,6 +11,68 @@
 body {
   font-size: 15px;
   font-family: "Spartan", Arial, Helvetica, sans-serif;
+  color: #502050;
+  text-align: center;
+}
+
+.wrapper {
+  width: 90%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 374px;
+  height: 232px;
+  background: url(/images/bg-pattern-top-mobile.svg);
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 375px;
+  height: 503px;
+  background: url(/images/bg-pattern-bottom-mobile.svg);
+}
+
+.company-blurb {
+  margin-top: 3em;
+}
+
+.company-blurb__heading {
+  font-size: 2em;
+}
+
+.company-blurb__content {
+  color: #937b92;
+  margin: 1.5em 0;
+}
+
+.reviews {
+  margin: 2.5em 0;
+}
+
+.review {
+  background: #f7f2f7;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+
+.review__star {
+  margin-right: .5em;
+}
+
+.review__heading {
+  color: #502050;
+  font-size: 1.1em;
+  margin-top: .5em;
 }
 
 .attribution {
